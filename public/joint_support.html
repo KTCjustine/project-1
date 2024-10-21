@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Meta Tags -->
+        <meta property="og:type" content="Website" />
+        <meta property="og:title" content="Super Memory Formula" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:alt" content="" />
+        <meta property="og:description" content="This is a website description for the search engine" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="">
+        <meta name="twitter:card" content="summary_large_image" />
+
+		<title>Super Memory Formula</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+            rel="stylesheet"/>
+		<link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+            rel="stylesheet"
+            />
+		<link 
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		
+		<link href="./assets/css/style.css?v=2.1" rel="stylesheet" />
+	</head>
+
+    <body>
+      
+        <header class="xl:pt-[48px]">
+            <div class="mx-auto">
+                <div class="flex-col md:flex-row md:justify-center flex justify-center items-center gap-[20px] md:gap-0 xl:py-0 md:py-[30px] py-[20px]">
+                    <div class="custom-bg-grey-arrow md:flex hidden md:py-[13px] md:px-[68px] px-[68px] py-[13px]">
+                        <h2 class="text-custom-brown-100 md:text-[22px] md:leading-[25px] font-notosans font-bold text-[20px] leading-[23px]">Step 1 - Order Received</h2>
+                    </div>
+                    <div class="custom-bg-green3-arrow md:hidden flex md:py-[13px] md:px-[68px] px-[68px] py-[13px]">
+                        <h2 class="text-custom-brown-100 md:text-[22px] md:leading-[25px] font-notosans font-bold text-[20px] leading-[23px]">Step 1 - Order Received</h2>
+                    </div>
+                    <div class="custom-bg-green-arrow md:py-[13px] md:px-[68px] px-[68px] py-[13px]">
+                        <h2 class="text-white md:text-[22px] md:leading-[25px] font-notosans font-bold text-[20px] leading-[23px]">Step 2 - Upgrade Order</h2>
+                    </div>
+                    <div class="custom-bg-green3-arrow md:py-[13px] md:px-[100px] px-[115px] py-[13px]">
+                        <h2 class="text-custom-brown-100 md:text-[22px] md:leading-[25px] font-notosans font-bold text-[20px] leading-[23px]">Step 3 - Finish</h2>
+                    </div>
+                </div>
+            </div>
+
+
+   
+            <div class="xl:mt-[40px] md:py-[13px] py-[20px] text-center bg-custom-green-102">
+                <h1 class="md:text-[32px] text-[20px] font-oswald font-medium text-white">
+                    YOUR ORDER IS RESERVED FOR <span id="timer">10:00</span>
+                </h1>
+            </div>
+            <div class="md:py-[48px] xl:px-0 md:px-[30px] px-[15px] py-[20px] text-center bg-custom-green-101">
+                <h3 class="md:text-[32px] text-[20px] text-custom-green-100 font-poppins font-bold">
+                    Wait… Your Order is Not Complete!
+                </h3>
+                <div class="md:mt-[24px] mt-[20px]">
+                    <h4 class="md:text-[24px] text-[18px] font-poppins font-medium text-custom-black-101">
+                        Do not hit the “Back” button as it can cause multiple charges to your card. 
+                    </h4>
+                </div>
+            </div>
+        </header>
+
+        <main class="md:pt-[48px] pt-[25px]">
+            <section class="md:max-w-[1065px] md:mx-auto xl:px-0 md:px-[30px] px-[15px] text-center">
+                <h1 class="md:leading-[48px] md:text-[40px] text-[23px] text-custom-green-100 font-poppins font-bold">
+                    Experience the Benefits From An All Natural Formula - 
+                    <span class="text-custom-yellow-101">Elevate Your Joint Health Naturally for Optimal Support and Comfort!</span>
+                </h1>
+            </section>
+
+            <section class="md:mt-[48px] mt-[20px] md:max-w-[1140px] md:py-[48px] py-[20px] px-[15px] md:px-[50px] xl:mx-auto md:mx-[30px] mx-[15px] custom-border-brown relative">
+                <h1 class="md:text-[32px] text-[23px] text-custom-green-100 font-poppins font-bold">
+                    Hi, It’s Michael here again.
+                </h1>
+                <img class="lg:mt-0 mt-[20px] lg:absolute xl:top-[32px] lg:top-[80px] xl:right-[68px] lg:right-[40px] xl:w-auto lg:w-[270px] md:w-[50%] lg:mx-0 w-[80%] mx-auto" src="./assets/img/old-white-man.png" alt="White man">
+                <div class="md:mt-[32px] mt-[20px] lg:max-w-[571px]">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                        Congratulations on making an amazing decision to purchase Super Memory Formula!
+                        <br><br>
+                        Our team discovered another all-natural formula that harnesses the natural synergy of potent ingredients that can help reduce inflammation and joint pain.
+                        <br><br>
+                        In weeks…
+                        <br><br>
+                        Or in a matter of days!
+                    </p>
+                </div>
+            </section>
+
+            <section class="md:mt-[48px] mt-[30px] md:pt-[56px] md:pb-[48px] py-[30px] custom-bg-wave relative">
+                <div class="text-center relative z-[5]">
+                    <h2 class="md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-semibold">
+                        Introducing…
+                    </h2>
+                </div>
+
+                <img class="absolute top-[60px] md:top-[72px] md:left-[50%] md:-translate-x-1/2 z-[2]" src="./assets/img/white-blur.png" alt="White blur">
+                <img class="absolute top-[95px] md:top-[72px] md:left-[50%] md:-translate-x-1/2 z-[1]" src="./assets/img/orange-wave.png" alt="Orange Wave">
+                <img class="absolute top-[45px] md:top-[86px] md:left-[50%] md:-translate-x-1/2 z-[3]" src="./assets/img/orange-blur.png" alt="Orange Blur">
+                <div class="text-center relative z-[4]">
+                    <h1 class="md:leading-[80px] md:text-[72px] text-[40px] custom-text-yellow-shadow text-custom-green-100 font-oswald font-semibold">
+                        ALL NATURAL <br>
+                        JOINT SUPPORT
+                    </h1>
+                </div>
+
+                <img class="md:mt-[32px] mt-[20px] md:w-auto mx-auto w-[85%]" src="./assets/img/6-bottles-joint.png" alt="6 Bottles">
+
+                <div class="md:mt-[25px] mt-[15px] md:max-w-[1140px] md:py-[32px] py-[20px] md:mx-auto text-center custom-bg-green-blur ">
+                    <div class="md:max-w-[805px] md:mx-auto md:px-0 px-[15px]">
+                        <p class="md:text-[24px] text-[20px] font-poppins text-white font-bold">
+                            Experience this revolutionary transformative health benefits of our latest innovation - ALL NATURAL JOINT SUPPORT!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="md:py-[48px] xl:px-0 md:px-[30px] px-[15px] py-[30px]">
+                <div class="md:max-w-[1040px] md:mx-auto text-center">
+                    <h1 class="md:leading-[40px] md:text-[32px] text-[20px] text-custom-green-100 font-poppins font-bold">
+                        ALL NATURAL JOINT SUPPORT Is Not Only A Booster Of Its Kind, It’s Specially Formulated To Work In Synergy With The  Super Memory Formula.
+                    </h1>
+                </div>
+                
+                <div class="md:mt-[32px] mt-[20px] text-center">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                        This advanced supplement is ideally suited for:
+                    </p>
+                </div>
+
+
+                <article class="md:mt-[32px] mt-[20px] md:max-w-[1140px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-1.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>1. Active Individuals and Athletes:</b>  Whether you’re an athlete pushing 
+                            <span class="xl:ml-[22px]">boundaries or someone leading an active lifestyle, ALL NATURAL JOINT </span>
+                            <span class="xl:ml-[22px]">SUPPORT provides the necessary support to maintain joint health and</span>
+                            <span class="xl:ml-[22px]">flexibility, promoting peak performance.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="md:mt-[32px] mt-[20px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:max-w-[1140px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col  flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-2.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>2. Aging Adults:</b> As we age, joint concerns become more prevalent. ALL 
+                            <span class="xl:ml-[23px]">NATURAL JOINT SUPPORT is an ideal companion for seniors, offering</span>
+                            <span class="xl:ml-[23px]">targeted relief from joint discomfort and supporting mobility for a</span>
+                            <span class="xl:ml-[23px]">more fulfilling and independent lifestyle.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="md:mt-[32px] mt-[20px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:max-w-[1140px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-3.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>3. Fitness Enthusiasts:</b> Whether you engage in intense workouts or 
+                            <span class="xl:ml-[24px]">regular fitness routines, our supplementary aids in recovery, </span>
+                            <span class="xl:ml-[24px]">reducing inflammation and promoting joint resilience to keep you on </span>
+                            <span class="xl:ml-[24px]">track with your fitness goals.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="md:mt-[32px] mt-[20px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:max-w-[1140px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-4.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>4. Occupational Individuals:</b> Those with physically demanding jobs or 
+                            <span class="xl:ml-[26px]">prolonged periods of sitting can benefit from the natural joint </span>
+                            <span class="xl:ml-[26px]">support offered by ALL NATURAL JOINT SUPPORT. Enhance your daily </span>
+                            <span class="xl:ml-[26px]">comfort and productivity with this comprehensive solution.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="md:mt-[32px] mt-[20px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:max-w-[1140px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-5.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>5. Health-Conscious Individuals:</b> Anyone committed to holistic well-
+                            <span class="xl:ml-[25px]">being and natural approaches to health will appreciate our all-</span>
+                            <span class="xl:ml-[25px]">natural formula. Say goodbye to artificial additives and embrace a </span>
+                            <span class="xl:ml-[25px]">supplement that aligns your wellness goals.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="md:mt-[32px] mt-[20px] lg:py-0 py-[20px] lg:px-0 px-[15px] md:max-w-[1140px] md:mx-auto md:gap-[48px] custom-border2-brown lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:rounded-none rounded-[20px]" src="./assets/img/groupic-6.png" alt="Group picture">
+                    <div class="md:max-w-[792px] md:mt-0 mt-[15px]">
+                        <p  class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            <b>6. Anyone Seeking Proactive Joint Care:</b> Whether you currently 
+                            <span class="xl:ml-[25px]">experience joint discomfort or wish to proactively maintain joint </span>
+                            <span class="xl:ml-[25px]">health, ALL NATURAL JOINT SUPPORT is designed for you. Start your </span>
+                            <span class="xl:ml-[25px]">journey towards improved  well-being today.</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="md:max-w-[1040px] md:mx-auto md:mt-[39px] mt-[20px] text-center">
+                    <p class="md:text-[24px] text-[18px] md:leading-[32px] text-custom-green-100 font-poppins">
+                        While Doctors May Prescribe Medications, Our ALL NATURAL JOINT SUPPORT Is Designed To Alleviate Inflammation And Joint Pain More Rapidly Offering A Natural Alternative For Enhanced Relief.
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="md:pt-[48px] md:pb-0 lg:px-0 md:px-[30px] px-[15px] py-[20px] custom-bg-left-wave">
+                <div class="text-center">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                         It is important to understand that
+                    </p>
+                </div>
+
+                <div class="mt-[12px] md:max-w-[1020px] md:mx-auto text-center">
+                    <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                        ALL NATURAL JOINT SUPPORT <span class="text-custom-black-101">consists of the most potent ingredients on Earth.</span>
+                    </h1>
+                </div>
+
+                <article class="md:max-w-[1140px] md:mx-auto md:mt-[48px] mt-[25px] md:py-[48px] py-[20px] px-[15px] md:px-[50px] custom-container relative">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                        Let’s start with…
+                    </p>
+
+                    <div class="mt-[12px] md:max-w-[535px]">
+                        <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                            Turmeric Powder: <span class="text-custom-black-101">A Golden Elixir for Health and Vitality</span>
+                        </h1>
+                    </div>
+
+                    <img class="lg:absolute lg:right-[21px] lg:top-[64px] xl:w-auto lg:w-[380px] lg:mx-0 md:w-[60%] mx-auto w-[90%]" src="./assets/img/turmeric-powder.png" alt="Tumeric Powder">
+
+                    <div class="md:mt-[32px] lg:max-w-[630px]">
+                        <p class="md:text-[22px] text-custom-black-101 font-poppins">
+                            Not only a versatile spice that adds a rich, warm flavor to a variety of dishes but, Turmeric also contains curcumin, a potent anti-inflammatory compound. 
+                            <br><br>
+                            It is proven a natural remedy for conditions like arthritis and is rich in antioxidants that help combat oxidative stress in the body which has been linked to inflammation, joint pain and cognitive decline.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+
+            <section class="lg:py-0 py-[20px] lg:px-0 md:px-[30px] px-[15px] bg-custom-green-101">
+                <article class="md:max-w-[1140px] md:mx-auto md:gap-[32px] lg:flex-row flex-col flex justify-start items-center">
+                    <img class="lg:block hidden custom-mix-blend" src="./assets/img/white-willow-nobg.png" alt="White willow">
+
+                    <div class="text-start">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            Next is…
+                        </p>
+
+                        <div class="mt-[12px] lg:max-w-[485px]">
+                            <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                                White Willow Bark Extract: <span class="text-custom-black-101">Nature’s Soothing Remedy</span>
+                            </h1>
+                        </div>
+
+                        <img class="lg:hidden custom-mix-blend w-[90%] md:w-[60%] mx-auto" src="./assets/img/white-willow-nobg.png" alt="White willow">
+
+                        <div class="md:mt-[32px] lg:max-w-[538px]">
+                            <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                                The anti-inflammatory and analgesic properties of White Willow Bark Extract make it a valuable ally in addressing joint pain.
+                                <br><br>
+                                It is also a memory enhancer with properties that contribute to brain health, providing support against cognitive decline and memory loss
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+
+            <section class="md:pb-[48px] md:pt-0 py-[20px] lg:px-0 md:px-[30px] px-[15px] custom-bg-right-wave">
+                <article class="md:max-w-[1140px] md:mx-auto md:py-[48px] py-[20px] px-[15px] md:px-[50px] custom-container relative">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                        Another ingredient we added is…
+                    </p>
+
+                    <div class="mt-[12px] md:max-w-[535px]">
+                        <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                            Black Pepper Extract: <span class="text-custom-black-101">The Spice of Wellness</span>
+                        </h1>
+                    </div>
+
+                    <img class="lg:absolute lg:right-0 lg:top-[32px] xl:w-auto lg:w-[350px] md:w-[60%] lg:mx-0 mx-auto w-[90%]" src="./assets/img/pepper-blend.png" alt="Pepper Blend">
+
+                    <div class="md:mt-[32px] md:max-w-[641px]">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            Black Pepper contains piperine, known for its ability to enhance nutrient absorption. 
+                            <br><br>
+                            Piperine also exhibits anti-inflammatory properties that help mitigate inflammation and is particularly beneficial for those dealing with joint pain.
+                            <br><br>
+                            This compound also promotes increased neurotransmitter activity and blood flow to the brain contributing to improved cognitive and memory retention.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="md:pt-[48px] md:px-0 px-[15px] pt-[30px]">
+                <article class="md:max-w-[1140px] md:mx-auto md:px-[50px]">
+                    <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                        Imagine A Life Free Of Pain…
+                    </h1>
+
+                    <div class="md:mt-[32px] mt-[20px] md:gap-[18px] gap-[10px] flex justify-start items-center">
+                        <img src="./assets/img/nike-check.png" alt="Green Check">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            Improved memory and cognitive function
+                        </p>
+                    </div>
+
+                    <div class="mt-[18px] md:gap-[18px] gap-[10px] flex justify-start items-center">
+                        <img src="./assets/img/nike-check.png" alt="Green Check">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            Balanced and healthy aging process
+                        </p>
+                    </div>
+
+                    <div class="mt-[18px] md:gap-[18px] gap-[10px] flex justify-start items-center">
+                        <img src="./assets/img/nike-check.png" alt="Green Check">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            Richer, more vibrant and adventurous lifestyle
+                        </p>
+                    </div>
+
+                    <div class="mt-[18px] md:gap-[18px] gap-[10px] flex justify-start items-center">
+                        <img src="./assets/img/nike-check.png" alt="Green Check">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            A reassurance to your loved ones as you regain your well-being and vitality
+                        </p>
+                    </div>
+
+                    <div class="md:mt-[32px] mt-[20px] md:max-w-[1040px]">
+                        <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                            What are you waiting for? 
+                            <br><br>
+                            Regain the healthy and beautiful YOU!
+                            <br><br>
+                            And because it’s essential for us to ensure that every step of our process is thoroughly executed, which involves careful selection of ingredients and extends to the meticulous manufacturing of our products - all upheld to the highest standards of quality and excellence. 
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="md:mt-[48px] mt-[25px] md:max-w-[1140px] md:py-[48px] py-[20px] px-[15px] md:px-[50px] lg:mx-auto md:mx-[30px] mx-[15px] custom-border-brown relative">
+                <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                    This means…
+                </p>
+                <div class="mt-[12px]">
+                    <h1 class="md:leading-[40px] md:text-[32px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                        SUPPLIES ARE EXTREMELY LIMITED.
+                    </h1>
+                </div>
+                <div class="md:mt-[32px] mt-[15px] md:max-w-[695px]">
+                    <p class="md:text-[22px] text-[18px] text-custom-black-101 font-poppins">
+                        It can take a long time to produce ALL NATURAL JOINT SUPPORT.
+                        <br><br>
+                        Currently, our stock is limited to a maximum of 200 bottles at any given time
+                        <br><br>
+                        With no guarantee when we will be able to restock. 
+                        <br><br>
+                        That is why you MUST secure your order TODAY!
+                        <br><br>
+                        Plus, when you buy the 3 or 6 bottle option,
+                        <br><br>
+                        You’re not just saving money, but 
+                        <br><br>
+                        You’re securing a substantial financial advantage. 
+                        <br><br>
+                        This is about achieving quicker, more effective results - 
+                        <br><br>
+                        Not just for your benefit 
+                        <br><br>
+                        but especially for the ones who cherish and rely on you. 
+                        <br><br>
+                        So, don’t let this opportunity slip away.
+                    </p>
+                </div>
+                <img class="lg:absolute lg:right-0 lg:top-[81px] xl:w-auto lg:w-[360px] md:w-[80%] lg:mx-0 mx-auto w-[95%]" src="./assets/img/3-bottles-splash.png" alt="3 Bottles Splash">
+
+                <article class="md:mt-[32px] mt-[20px] md:py-[60px] lg:py-[80px] py-[20px] px-[15px] md:px-[50px] md:max-w-[1040px] custom-green-container relative">
+
+                    <div class="lg:mt-0 mt-[12px] md:max-w-[603px]">
+                        <h1 class="md:text-[32px] text-[20px] text-white font-poppins font-bold">
+                            You are also covered by our Extended 60-Day, Results Guarantee
+                        </h1>
+                    </div>
+                    <img class="lg:absolute lg:top-[-25px] lg:right-[42px] lg:mx-0 xl:w-auto lg:w-[380px] mx-auto" src="./assets/img/60days.png" alt="Moneyback 60 Days Badge">
+                    <div class="md:mt-[32px]">
+                        <p class="md:text-[22px] text-[18px] text-white font-poppins">
+                            You won’t see this one-time offer again. 
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="md:mt-[48px] mt-[30px] md:px-0 px-[15px] md:py-[48px] py-[20px] bg-custom-white-100">
+                <div class="text-center">
+                    <h1 class="md:text-[40px] text-[25px] text-custom-green-100 font-poppins font-bold">
+                        Secure Your Package While Stock Lasts
+                    </h1>
+                </div>
+
+
+                <article class="md:mt-[48px] mt-[20px] md:max-w-[1140px] md:mx-auto">
+                    <div class="md:pt-[20px] md:pb-[13px] py-[15px] md:px-0 px-[5px] text-center custom-green-border">
+                        <h1 class="md:text-[24px] text-[19px] text-white font-poppins font-bold">
+                            ON THIS PRIVATE PAGE ONLY, YOU CAN STOCK UP ON ALL NATURAL JOINT SUPPORT
+                        </h1>
+                    </div>
+
+                    <div class="md:pt-[36px] md:pb-[32px] py-[20px] lg:px-0 md:px-[30px] px-[15px] rounded-b-[16px] bg-white relative">
+                        <div class="lg:flex-row flex-col flex justify-center lg:items-start items-center">
+                        <!-- FIRST -->
+                        <div class="flex flex-col justify-center items-center">
+                            <img class="lg:block hidden" src="./assets/img/6-bottles-joint-support.png" alt="6 Bottles joint support">
+                            <img class="lg:block hidden" src="./assets/img/100-secure-badge.png" alt="100% Secure Badge">
+                            <img class="lg:block hidden absolute left-[35%] bottom-[45%]" src="./assets/img/ebooks.png" alt="100% Secure Badge" >
+                        </div>
+                        
+                        <!-- END -->
+
+                        <!-- SECOND -->
+                        <div class="flex flex-col justify-center items-center relative">
+                            <div class="md:max-w-[539px] text-center">
+                                <h1 class="md:text-[48px] text-[30px] leading-tight text-custom-black-101 font-poppins font-bold">
+                                    You can still secure a <span class="text-custom-green-100">HUGE Discount</span> on <span class="text-custom-green-100">All Natural Joint SUpport</span>
+                                </h1>
+                            </div>
+
+                            <img class="mt-[15px] w-[90%] lg:hidden mx-auto" src="./assets/img/6-bots-joint-new.png" alt="6 Bottles joint support">
+                            <img class="lg:hidden mx-auto" src="./assets/img/100-secure-badge.png" alt="100% Secure Badge">
+                            <!-- <img class="lg:hidden max-w-[180px]  absolute left-[55%] bottom-[48%]" src="./assets/img/ebooks.png" alt="100% Secure Badge" > -->
+                            <div class="md:mt-[24px]">
+                                <p class="leading-tight md:text-[24px] text-[18px] text-custom-black-101 font-poppins">
+                                    Add only 6 bottles
+                                </p>
+                            </div>
+
+                            <div class="mt-[7px]">
+                                <p class="md:text-[32px] text-[22px] leading-tight text-custom-black-101 font-poppins font-bold">
+                                    FOR JUST
+                                </p>
+                            </div>
+
+                            <div class="">
+                                <h1 class="md:text-[112px] text-[80px] leading-tight text-custom-black-101 font-montserrat font-bold">
+                                    $19<span class="md:text-[70px] text-[60px]">.00</span>
+                                </h1>
+                            </div>
+
+                            <div>
+                                <p class="leading-tight md:text-[24px] text-[18px] text-custom-black-101 font-poppins font-bold">
+                                    PER BOTTLE
+                                </p>
+                            </div>
+
+                            <a href="#" class="md:mt-[27px] mt-[20px] md:w-[457px] w-[310px] py-[24px] md:text-[30px] text-[20px] md:leading-tight font-nunitosans text-center custom-yellow-btn text-custom-black-101 font-black">
+                                Yes, Add This To My Order
+                            </a>
+                        </div>
+                        <!-- END -->
+                        </div>
+
+                        <div class="lg:mt-[12px] mt-[30px] text-center">
+                            <p class="md:text-[22px] text-[18px] text-custom-black-200 font-poppins">
+                                <b>​Pay Nothing Extra</b> in Shipping and Receive Upgraded Shipping for US and Canada!
+                            </p>
+                        </div>
+
+                        <div class="relative md:mt-[23px] mt-[20px] md:py-[32px] py-[20px] lg:pr-0 lg:pl-[41px] md:px-[30px] px-[15px] md:max-w-[1040px] md:gap-[48px] lg:flex-row flex-col-reverse flex justify-start items-center md:mx-auto bg-custom-white-100 rounded-[8px]">
+                            <a href="" class="md:mt-0 mt-[15px] w-[191px] py-[19px] text-[18px] rounded-[30px] text-center text-custom-black-300 font-inter font-bold italic custom-grey-btn">
+                                NO, THANKS
+                            </a>
+                            <p class="lg:text-start text-center md:text-[20px] nimbus-sans text-custom-black-300">
+                                By passing on this offer, you understand you won't be given this special deal again 
+                            </p>
+
+                            <svg class="lg:block hidden absolute top-[62px] left-[209px]" xmlns="http://www.w3.org/2000/svg" width="56" height="3" viewBox="0 0 56 3" fill="none">
+                                <path d="M0.624542 1.19287H55.3136" stroke="#242424" stroke-width="2.27871" stroke-miterlimit="10"/>
+                            </svg>
+                            <svg class="lg:block hidden absolute top-[57px] left-[257px]" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                                <path d="M2.5203 12.5439L7.40813 7.45552C7.59071 7.26133 7.69235 7.00483 7.69235 6.73829C7.69235 6.47176 7.59071 6.21526 7.40813 6.02107L2.5203 0.931571C2.34604 0.774007 2.11948 0.686768 1.88454 0.686768C1.64961 0.686768 1.42305 0.774007 1.24878 0.931571C1.05109 1.11175 0.929843 1.36075 0.909927 1.62749C0.890012 1.89423 0.972935 2.15848 1.14168 2.36602L5.33565 6.73203L1.14168 11.1083C0.959111 11.3025 0.857465 11.559 0.857465 11.8255C0.857465 12.092 0.959111 12.3485 1.14168 12.5427C1.23039 12.6364 1.33722 12.711 1.45569 12.762C1.57415 12.813 1.70176 12.8394 1.83075 12.8395C1.95973 12.8396 2.08739 12.8134 2.20594 12.7626C2.32448 12.7118 2.43145 12.6374 2.5203 12.5439Z" fill="#242424"/>
+                              </svg>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+
+        <footer class="md:py-[67px] py-[20px] lg:px-0 md:px-[30px] px-[15px] bg-custom-black-101">
+            <div class="md:max-w-[1006px] md:mx-auto text-center">
+                <p class="md:text-[18px] text-[16px] font-light text-white font-inter">
+                    Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. Please note that the information we provide is not intended to replace consultation with a qualified medical professional. We encourage you to inform your physician of changes you make to your lifestyle and discuss these with him or her. For questions or concerns about any medical conditions you may have, please contact your doctor. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products. DeRose Health is the retailer of the products on this site and  is  located at 7361 Winder Ct., Lake Worth, FL, 33467 USA and used by permission.
+                </p>
+            </div>
+            <div class="md:mt-[48px] mt-[20px] text-center flex justify-center items-start text-white">
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">Contact</a>&nbsp;|&nbsp;
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">Privacy Policy</a>&nbsp;|&nbsp;
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">Terms of Service</a>
+            </div>
+            <div class="text-center flex justify-center items-start text-white">
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">References </a>&nbsp;|&nbsp;
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">Return Policy</a>&nbsp;|&nbsp;
+                <a href="" class="md:text-[18px] text-[16px] text-white font-inter font-light underline">Product</a>
+            </div>
+            <div class="text-center">
+                <a href="" class="md:text-[18px] text-white font-inter font-light underline">Instructions</a>
+            </div>
+        </footer>
+
+        <script src="./assets/js/app.js?v=1.0"></script>
+    </body>
+</html>
